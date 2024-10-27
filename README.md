@@ -14,7 +14,9 @@ pip install requests
 ```
 
 ## Usage
-Run the following command to start the application:
+Add your *base_url*, *api_key*, *model_name* to config.py
+
+Then run the following command to start the CLI application:
 ```bash
 python testRun.py
 ```
