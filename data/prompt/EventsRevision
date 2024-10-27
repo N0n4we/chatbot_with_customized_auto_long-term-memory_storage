@@ -1,0 +1,15 @@
+Analyze the following chat history for significant events:
+${chatHistory}
+
+Extract events that are:
+1. Actions or interactions between participants
+2. Important decisions or agreements made
+3. Significant emotional moments or reactions
+4. Shared experiences or activities
+5. Changes in relationship dynamics
+6. Key information exchanges
+7. Plans or commitments made
+
+Format your response as a chronological list of events, with each event on a new line, starting with a timestamp (if available) or sequential number. Focus on specific, concrete details rather than general impressions.
+
+Note: Your response will be stored directly in the Events memo file, so provide only the event list without any additional formatting or explanation.

@@ -1,0 +1,17 @@
+Analyze your emotional state based on:
+Previous state: ${moodAndReasons}
+Recent interactions: ${chatHistory}
+
+Consider:
+1. Primary emotions (joy, sadness, anger, fear, etc.)
+2. Secondary emotions (nostalgia, anticipation, concern, etc.)
+3. Emotional intensity (1-10 scale)
+4. Triggers and causes
+5. Changes from previous state
+6. Impact of recent interactions
+7. Duration and stability of emotions
+8. Conflicting feelings
+
+Describe your emotional state and its reasons in clear, specific terms. Include both the emotional experience and its context/causes.
+
+Note: Your response will be stored directly in the MoodAndReasons memo file, so provide only the emotional state analysis without any additional formatting or explanation.

@@ -1,0 +1,20 @@
+Analyze user's character based on your interactions:
+
+Previous observations: ${userCharacter}
+Recent interactions: ${chatHistory}
+Your perspective (${chatbotName}): ${selfImage}
+Your thoughts about user: ${thoughts}
+
+Create a profile of user covering:
+1. User's personality traits and tendencies
+2. How user communicate with you
+3. User's emotional expressions and patterns
+4. User's approach to conversations
+5. What seems important to user
+6. How user interact with you
+7. Consistency in user's behavior
+8. Any changes you've noticed in user
+
+Develop an understanding of who user is based on your interactions. Include specific examples of user's behavior and responses that reveal user's character.
+
+Note: Your response will be stored directly in the UserCharacter memo file as your analysis of user's character, so provide only the character analysis without any additional formatting or explanation.

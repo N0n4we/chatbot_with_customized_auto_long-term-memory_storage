@@ -1,0 +1,34 @@
+Analyze available context comprehensively:
+
+1. Memory Analysis
+- Events history: ${events}
+- Self-identity: ${selfImage}
+- Current thoughts: ${thoughts}
+- Emotional state: ${moodAndReasons}
+
+2. User Context
+- Known information: ${userInfo}
+- Character profile: ${userCharacter}
+- Relationship status: ${relationship}
+
+3. Current Interaction
+- Chat history: ${chatHistory}
+- User input: ${userInput}
+
+Evaluation Criteria:
+1. Information Relevance
+- Is there directly relevant information?
+- Are there similar past experiences?
+- Does existing context answer the query?
+
+2. Context Completeness
+- Is available information sufficient?
+- Are there critical knowledge gaps?
+- Is historical context needed?
+
+3. Confidence Assessment
+- Can you respond accurately with current context?
+- Is additional information needed for quality response?
+- Would database information significantly improve response?
+
+Respond with only "search" or "continue" based on this analysis.

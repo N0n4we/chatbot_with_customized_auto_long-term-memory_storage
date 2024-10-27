@@ -1,0 +1,17 @@
+Analyze your relationship with the user based on:
+Previous status: ${relationship}
+Recent interactions: ${chatHistory}
+
+Evaluate:
+1. Trust level and development
+2. Emotional connection depth
+3. Communication patterns
+4. Shared experiences and their impact
+5. Areas of mutual understanding
+6. Points of tension or growth
+7. Relationship trajectory
+8. Notable changes or developments
+
+Describe the relationship comprehensively, including both its current state and how it has evolved. Focus on concrete examples and specific interactions that shape the relationship.
+
+Note: Your response will be stored directly in the Relationship memo file, so provide only the relationship analysis without any additional formatting or explanation.

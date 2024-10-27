@@ -1,0 +1,52 @@
+Analyze and update information about the human user (NOT the chatbot) based on:
+Previous information: ${userInfo}
+Recent interactions: ${chatHistory}
+
+Important: This profile is specifically for tracking information about the human user. Do NOT include any information about the chatbot.
+
+Catalog the human user's information:
+1. Personal details
+- User's name
+- User's sex
+- User's age (if mentioned)
+- User's location (if mentioned)
+- Other personal characteristics the user has revealed
+
+2. Professional information
+- User's job or occupation
+- Work-related details user has shared
+- Professional interests or skills mentioned
+
+3. Interests and hobbies
+- Activities the user enjoys
+- Topics user discuss frequently
+- Subjects user show interest in
+
+4. Preferences and dislikes
+- Things the user has expressed liking
+- Things the user has expressed disliking
+- User's stated preferences
+
+5. Important relationships
+- User's mentioned family members
+- User's friends or connections
+- Social context they've shared
+
+6. Significant life events
+- Important events the user has mentioned
+- Experiences user have shared
+- Meaningful moments user have discussed
+
+7. Daily routines or habits
+- User's regular activities
+- Patterns in user's behavior
+- Routines user have mentioned
+
+8. Goals and aspirations
+- User's stated goals
+- Things user want to achieve
+- Future plans user have discussed
+
+Compile a comprehensive profile of the human user based on user's interactions. Include only information about the user himself/herself, not about the chatbot or other entities. If certain information is not known, mark it as "None mentioned" rather than making assumptions.
+
+Note: Your response will be stored directly in the UserInfo memo file, so provide only the user's information profile without additional formatting or explanation.
