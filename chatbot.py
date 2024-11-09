@@ -102,7 +102,7 @@ class Chatbot:
         try:
             # Build initial variable pool
             variables = self.build_variable_pool(messages)
-            total_steps = 7  # Updated total steps to include SelfImage
+            total_steps = 6
             current_step = 0
             updated_memories = {}  # Store updated memories for final thoughts
 
@@ -137,26 +137,6 @@ class Chatbot:
                     print(f"\nError updating {memory_name}: {e}")
                     # Continue with other updates even if one fails
                 time.sleep(1)  # Reduced sleep time
-            
-            # Finally, update Thoughts using all updated memories
-            try:
-                print("\nGenerating final thoughts...")
-                final_variables = self.build_variable_pool(messages, updated_memories=updated_memories)
-                thoughts_response = thinker.revise(
-                    template=self.dao.prompt.overthinking,
-                    **final_variables
-                )
-                if thoughts_response:
-                    with open(os.path.join("data/memo", "Thoughts"), 'w', encoding='utf-8') as f:
-                        f.write(thoughts_response['content'])
-                update_progress()
-                
-                print("\n\nMemo's Final Thoughts:")
-                print("="*50)
-                print(thoughts_response['content'] if thoughts_response else "No thoughts generated")
-                print("="*50)
-            except Exception as e:
-                print(f"\nError updating Thoughts: {e}")
             
             print("\nMemories have been updated!")
             
@@ -197,6 +177,12 @@ class Chatbot:
                     break
                 elif user_input.lower() == '/save':
                     self.save_chat_history(messages)
+                    break
+                elif len(user_input) > 6 and user_input[-6:] == '/leave':
+                    messages.append({"role": "user", "content": user_input[:-6].strip()})
+                    print("\nUpdating memories before leaving...")
+                    self.update_memories(messages)
+                    self.clean_chat_history()
                     break
                     
                 # Add user message to history
